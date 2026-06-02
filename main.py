@@ -28,10 +28,9 @@ import pandas as pd
 # Make sure src/ is importable regardless of where Python is run from
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from src.generate_data    import generate
-from src.audit_engine     import run_audit
-from src.report_generator import generate_report
-
+from generate_data    import generate
+from audit_engine     import run_audit
+from report_generator import generate_report
 
 def print_summary(summary):
     print("\n" + "=" * 55)
